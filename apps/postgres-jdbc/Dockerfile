@@ -8,7 +8,7 @@ RUN \
     apk add --no-cache \
         curl \
     && \
-        curl -Lfs -o /tmp/postgres.jar https://jdbc.postgresql.org/download/postgresql-42.7.3.jar
+        curl -Lfs -o postgres.jar https://jdbc.postgresql.org/download/postgresql-42.7.3.jar
 
 FROM scratch
 
