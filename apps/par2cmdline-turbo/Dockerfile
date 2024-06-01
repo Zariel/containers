@@ -21,9 +21,9 @@ RUN \
     && make \
     && make install
 
-FROM docker.io/library/alpine:3.20
+FROM scratch
 
 COPY --from=par2 /usr/local/bin/par2 /usr/local/bin/par2
-RUN /usr/local/bin/par2 --help
+RUN ["/usr/local/bin/par2", "--help"]
 
 CMD ["/usr/local/bin/par2"]
