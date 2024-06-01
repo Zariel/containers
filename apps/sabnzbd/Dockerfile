@@ -62,7 +62,7 @@ COPY --from=ghcr.io/onedr0p/par2cmdline-turbo:1.1.1 /usr/local/bin/par2 /usr/loc
 RUN ln -s /usr/local/bin/par2 /usr/local/bin/par2create \
     && ln -s /usr/local/bin/par2 /usr/local/bin/par2repair \
     && ln -s /usr/local/bin/par2 /usr/local/bin/par2verify
-COPY --from=ghcr.io/linuxserver/unrar:7.0.7@sha256:66d2b8e21213034b76696055647c53f7b68ba4bc5737a83558ba7186e93c2eec /usr/bin/unrar-alpine /usr/bin/unrar
+COPY --from=ghcr.io/linuxserver/unrar:7.0.7@sha256:c797d3204d73e02fe988f2f5693f9568928043e6d92d614c7e1a2f6f53eba13a /usr/bin/unrar-alpine /usr/bin/unrar
 
 USER nobody:nogroup
 WORKDIR /config
