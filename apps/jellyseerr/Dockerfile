@@ -10,6 +10,8 @@ ENV UMASK="0002" \
 USER root
 WORKDIR /app
 
+ENV COMMIT_TAG=${VERSION}
+
 #hadolint ignore=DL3018,DL3059
 RUN \
     apk add --no-cache \
@@ -49,8 +51,6 @@ FROM docker.io/library/node:20-alpine
 USER root
 WORKDIR /app
 
-COPY --from=build /app /app
-
 RUN \
     apk add --no-cache \
         bash \
@@ -63,6 +63,8 @@ RUN \
     esac \
     && npm install --global pnpm \
     && rm -rf /tmp/*
+
+COPY --from=build /app /app
 
 COPY ./apps/jellyseerr/entrypoint.sh /entrypoint.sh
 
