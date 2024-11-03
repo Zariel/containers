@@ -108,6 +108,7 @@ Each Image will be built with a `rolling` tag, along with tags specific to it's 
 
 Container | Channel | Image
 --- | --- | ---
+[jellyseerr](https://github.com/Zariel/containers/pkgs/container/jellyseerr) | master | ghcr.io/Zariel/jellyseerr
 [lidarr](https://github.com/Zariel/containers/pkgs/container/lidarr) | master | ghcr.io/Zariel/lidarr
 [lidarr-develop](https://github.com/Zariel/containers/pkgs/container/lidarr-develop) | develop | ghcr.io/Zariel/lidarr-develop
 [lidarr-nightly](https://github.com/Zariel/containers/pkgs/container/lidarr-nightly) | nightly | ghcr.io/Zariel/lidarr-nightly
