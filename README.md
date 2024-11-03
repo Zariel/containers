@@ -111,7 +111,6 @@ Container | Channel | Image
 [jellyseerr](https://github.com/Zariel/containers/pkgs/container/jellyseerr) | master | ghcr.io/Zariel/jellyseerr
 [lidarr](https://github.com/Zariel/containers/pkgs/container/lidarr) | master | ghcr.io/Zariel/lidarr
 [lidarr-develop](https://github.com/Zariel/containers/pkgs/container/lidarr-develop) | develop | ghcr.io/Zariel/lidarr-develop
-[lidarr-nightly](https://github.com/Zariel/containers/pkgs/container/lidarr-nightly) | nightly | ghcr.io/Zariel/lidarr-nightly
 [par2cmdline-turbo](https://github.com/Zariel/containers/pkgs/container/par2cmdline-turbo) | stable | ghcr.io/Zariel/par2cmdline-turbo
 [postgres-jdbc](https://github.com/Zariel/containers/pkgs/container/postgres-jdbc) | stable | ghcr.io/Zariel/postgres-jdbc
 [sabnzbd](https://github.com/Zariel/containers/pkgs/container/sabnzbd) | stable | ghcr.io/Zariel/sabnzbd
