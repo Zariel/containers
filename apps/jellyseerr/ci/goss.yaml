@@ -1,0 +1,11 @@
+---
+# yaml-language-server: $schema=https://raw.githubusercontent.com/goss-org/goss/master/docs/schema.yaml
+process:
+  node:
+    running: true
+http:
+  http://localhost:5055:
+    status: 200
+file:
+  /usr/local/bin/node:
+    exists: true
