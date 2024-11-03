@@ -1,4 +1,4 @@
-FROM docker.io/library/node:20-alpine AS build
+FROM docker.io/library/node:22-alpine AS build
 
 ARG TARGETPLATFORM
 ARG VERSION
@@ -44,7 +44,7 @@ RUN \
     && rm -rf /tmp/*
 
 
-FROM docker.io/library/node:20-alpine
+FROM docker.io/library/node:22-alpine
 
 USER root
 WORKDIR /app
