@@ -58,7 +58,7 @@ RUN \
 
 COPY ./apps/sabnzbd/sabnzbd.ini /app/sabnzbd.ini
 COPY ./apps/sabnzbd/entrypoint.sh /entrypoint.sh
-COPY --from=ghcr.io/zariel/par2cmdline-turbo:1.1.1@sha256:64de011db22e9a399a8b269a47903601ba93564eae7deafe7c7899bbd7e12ab8 /usr/local/bin/par2 /usr/local/bin/par2
+COPY --from=ghcr.io/zariel/par2cmdline-turbo:1.1.1@sha256:317e14008445c3f61a70fcccb50a123479c3f1c8aae40acfba1fbd3ceee0a18d /usr/local/bin/par2 /usr/local/bin/par2
 RUN ln -s /usr/local/bin/par2 /usr/local/bin/par2create \
     && ln -s /usr/local/bin/par2 /usr/local/bin/par2repair \
     && ln -s /usr/local/bin/par2 /usr/local/bin/par2verify
