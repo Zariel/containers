@@ -62,7 +62,7 @@ COPY --from=ghcr.io/zariel/par2cmdline-turbo:1.2.0@sha256:bb305084ad4d315d5e9cf1
 RUN ln -s /usr/local/bin/par2 /usr/local/bin/par2create \
     && ln -s /usr/local/bin/par2 /usr/local/bin/par2repair \
     && ln -s /usr/local/bin/par2 /usr/local/bin/par2verify
-COPY --from=ghcr.io/linuxserver/unrar:7.1.6@sha256:50c0c160baaf4ee1e147fcaff0b5220d9caaf05582ba5d7a6e754e16c77a4c95 /usr/bin/unrar-alpine /usr/bin/unrar
+COPY --from=ghcr.io/linuxserver/unrar:7.1.6@sha256:5c2cb60c2743e32a47edb710661b39bf3df6fa1808f96d17ee6d31bd1f3354c6 /usr/bin/unrar-alpine /usr/bin/unrar
 
 USER nobody:nogroup
 WORKDIR /config
