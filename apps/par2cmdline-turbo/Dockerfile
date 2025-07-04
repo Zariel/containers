@@ -1,4 +1,4 @@
-FROM docker.io/library/alpine:3.21 as par2
+FROM docker.io/library/alpine:3.22 as par2
 ARG TARGETARCH
 ARG VERSION
 ENV LDFLAGS="-static"
